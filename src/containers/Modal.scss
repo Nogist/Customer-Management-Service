@@ -1,0 +1,50 @@
+@import '../App.scss';
+
+form {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: green;
+  padding: 0 1.5rem;
+  input {
+    @include inputStyle
+  }
+  button {
+    @include inputStyle;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .sign {
+    background-color: #10A37F;
+    font-size: 16px;
+    color: white;
+    margin-top: 1.5rem;
+  }
+  span {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: unset;
+  }
+  p, h1 {
+    text-align: center;
+  }
+  label {
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

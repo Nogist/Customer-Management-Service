@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$fontText:'Open Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: $fontText;
+  text-decoration: none;
+  list-style: none;
+}
+
+.App {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+@mixin buttonStyle {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $fontText;
+  padding: 8px 12px;
+  color: white;
+  background-color: #10A37F;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@mixin inputStyle {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #c2c8d0;
+  outline: none;
+  border-radius: 3px;
+}
+@mixin buttonLogs {
+  width: 100%;
+}
+
+h3, a {
+  font-size: 16px;
+  color: white;
+
+}
